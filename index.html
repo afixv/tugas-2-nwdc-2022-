@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NWDC | Afix Vega Praditya</title>
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+      @font-face {
+        font-family: Stolzl-Medium;
+        src: url(./assets/fonts/Stolzl-Medium.woff);
+      }
+
+      @font-face {
+        font-family: Stolzl-Regular;
+        src: url(./assets/fonts/Stolzl-Regular.woff);
+      }
+
+      body {
+        font-family: Stolzl-Regular;
+      }
+
+      .nav_brand {
+        font-family: Stolzl-Medium;
+      }
+
+      .hero_button {
+        font-family: "Poppins", sans-serif;
+      }
+      .mascot .rectangle {
+        background: linear-gradient(180deg, rgba(63, 137, 117, 0.31) 0%, rgba(210, 200, 185, 0.31) 75.31%);
+        backdrop-filter: blur(4px);
+        transform: matrix(1, -0.21, -0.01, 0.98, 0, 0);
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "c-background": "#fcfaf7",
+              "c-green": "#44a58a",
+              "c-grey": "#d9d9d9",
+              "c-text": "#8f8f8f",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container bg-c-background text-base min-h-screen">
+      <!-- Navbar -->
+      <div class="navbar flex justify-between items-center py-8 px-48">
+        <div class="nav_brand text-[2.4em]">note<span class="text-c-green">.</span>io</div>
+        <div class="nav_menu">
+          <ul class="nav_list flex">
+            <li class="nav_item ml-8">
+              <a href="" class="nav_link">Discover</a>
+            </li>
+            <li class="nav_item ml-8">
+              <a href="" class="nav_link">Features<i class="uil uil-angle-down nav_icon"></i></a>
+            </li>
+            <li class="nav_item ml-8">
+              <a href="" class="nav_link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav_register rounded-3xl border-[3px] border-c-green px-[1rem] py-[.5rem]">
+          <a href="">Join</a>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <div class="hero flex my-0 mx-[12rem] flex-row">
+        <div class="content mt-[3rem]">
+          <h1 class="text-[80px] leading-[80px]">
+            Bring <br />
+            <span class="text-c-green">Ideas</span> to <br />
+            Life
+          </h1>
+          <div class="desc max-w-[56%] mt-[2rem] text-c-text text-[14px]">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis inventore expedita saepe vero soluta. Fugit! Lorem, ipsum dolor.</p>
+          </div>
+          <div class="hero_button text-[12px] mt-[2rem]">
+            <a href="" class="trial font-medium text-white py-[1rem] px-[1.2rem] rounded-3xl mr-[2rem] bg-c-green"> Get Free Trial! </a>
+            <a href="" class="watch font-bold"> <i class="uil uil-airplay text-[20px]"></i> Watch Video</a>
+          </div>
+          <div class="scroll-down mt-[4rem] text-[24px]">
+            <a href=""><i class="uil uil-arrow-down"></i></a>
+          </div>
+        </div>
+
+        <div class="mascot">
+          <div class="man h-[550px] relative z-20">
+            <img src="assets/illustration/the_man.png" alt="man" />
+          </div>
+          <div class="rectangle rounded-3xl absolute top-[155.26px] left-[778.66px] w-[470.42px] h-[388.34px] z-10"></div>
+          <div class="scope scale-[0.8] absolute top-[300px] right-[650px] z-20">
+            <img src="assets/illustration/scope.png" alt="scope" />
+          </div>
+          <div class="vr scale-[0.8] absolute top-[120px] right-[230px] z-20">
+            <img src="assets/illustration/vr.png" alt="vr" />
+          </div>
+
+          <div class="book scale-[0.8] absolute top-[250px] right-[180px] z-0">
+            <img src="assets/illustration/book.png" alt="book" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
